@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0a0a0a;
+color:white;
+}
+
+/* LOADING SCREEN */
+
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+flex-direction:column;
+}
+
+.loader-circle{
+border:6px solid #222;
+border-top:6px solid cyan;
+border-radius:50%;
+width:60px;
+height:60px;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+/* JARVIS SCREEN */
+
+#jarvis{
+position:fixed;
+width:100%;
+height:100%;
+background:#020b12;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+color:cyan;
+z-index:9998;
+display:none;
+}
+
+.jarvis-circle{
+width:150px;
+height:150px;
+border:3px solid cyan;
+border-radius:50%;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+
+#enterBtn{
+margin-top:20px;
+padding:10px 20px;
+border:none;
+background:cyan;
+color:black;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* ===== RESUME WEBSITE ===== */
+
+/* Navigation Bar */
+
+#navbar{
+background:#111;
+padding:15px;
+}
+
+.nav-list{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+.nav-list li{
+margin:0 15px;
+}
+
+.nav-list a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.nav-list a:hover{
+color:cyan;
+}
+
+/* Layout */
+
+.container{
+display:flex;
+min-height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:25%;
+background:#111;
+padding:20px;
+border-right:2px solid #333;
+text-align:center;
+}
+
+.profile-img{
+width:100%;
+border-radius:50%;
+border:3px solid cyan;
+}
+
+#name{
+margin-top:10px;
+}
+
+.title{
+font-style:italic;
+color:#aaa;
+}
+
+.contact ul{
+list-style:square;
+padding-left:20px;
+text-align:left;
+}
+
+/* Main Content */
+
+.main-content{
+width:75%;
+padding:30px;
+}
+
+section{
+margin-bottom:30px;
+}
+
+.highlight{
+color:cyan;
+font-weight:bold;
+}
+
+.skills-list{
+margin-left:20px;
+}
+
+.job{
+border-left:4px solid cyan;
+padding-left:10px;
+margin-top:10px;
+}
+
+.date{
+color:#aaa;
+font-size:0.9em;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- LOADER -->
+
+<div id="loader">
+<div class="loader-circle"></div>
+<p style="margin-top:10px">Loading Portfolio...</p>
+</div>
+
+<!-- JARVIS -->
+
+<div id="jarvis">
+
+<div class="jarvis-circle"></div>
+
+<h1>Welcome, User</h1>
+<p>Portfolio Ready</p>
+
+<button id="enterBtn">Enter Portfolio</button>
+
+</div>
+
+<!-- RESUME WEBSITE -->
+
+<nav id="navbar">
+<ul class="nav-list">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<img src="profile.png" alt="Profile Picture" class="profile-img">
+
+<h2 id="name">EDCIEL D GEOLINA</h2>
+
+<p class="title">PROGRAMMING STUDENT</p>
+
+<div class="contact">
+
+<h3>Contact</h3>
+
+<ul>
+<li>dayaonelvie@gmail.com</li>
+<li>Phone: 63995-098-0618</li>
+<li>Location: CALOOCAN, PHILIPPINES</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="main-content">
+
+<section id="about">
+<h2>About Me</h2>
+<p>I am a passionate <span class="highlight">web developer</span> with experience in building responsive and accessible websites.</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+
+<ul class="skills-list">
+<li>HTML & CSS </li>
+<li>JavaScript</li>
+<li>Writing</li>
+<li>Fast React</li>
+<li>Experimenting</li>
+</ul>
+
+</section>
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="job">
+
+<h3>Malabon - Computer Programming Lab</h3>
+
+<p class="date">2017 - Past</p>
+
+<ul>
+<li>Developed user-friendly web interfaces.</li>
+<li>Collaborated with friends.</li>
+<li>Maintained project documentation.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Language</h2>
+
+<ul>
+<li>Filipino</li>
+<li>English</li>
+</ul>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<p>You can reach me via email or phone for collaboration opportunities.</p>
+
+</section>
+
+</div>
+
+</div>
+
+<script>
+
+/* LOADING SCREEN */
+
+window.addEventListener("load", function(){
+
+setTimeout(function(){
+
+document.getElementById("loader").style.display="none";
+document.getElementById("jarvis").style.display="flex";
+
+},2000)
+
+})
+
+/* ENTER BUTTON */
+
+document.getElementById("enterBtn").onclick=function(){
+
+document.getElementById("jarvis").style.display="none"
+
+}
+
+</script>
+
+</body>
+</html>

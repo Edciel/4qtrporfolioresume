@@ -1,0 +1,109 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+#navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: relative;
+  z-index: 10; /* Z-INDEX EXAMPLE */
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Layout Container */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 2px solid #ccc; /* BORDER EXAMPLE */
+  position: relative;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #333;
+}
+
+#name {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.title {
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+
+.contact ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Main Content */
+.main-content {
+  width: 75%;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+.highlight {
+  color: #0077cc;
+  font-weight: bold;
+}
+
+/* Skills List */
+.skills-list {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Experience */
+.job {
+  border-left: 4px solid #0077cc;
+  padding-left: 10px;
+  margin-top: 10px;
+  position: relative; /* RELATIVE POSITIONING */
+}
+
+/* Inline element example inside block */
+.date {
+  display: inline; /* INLINE ELEMENT */
+  color: gray;
+  font-size: 0.9em;
+}
+
+/* Hover effect for links */
+.nav-list a:hover {
+  color: #0077cc;
+}

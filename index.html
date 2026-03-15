@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Resume</title>
+
+<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<!-- loader -->
+
+<div id="loader">
+<div class="loader-circle"></div>
+<p>Loading portfolio...</p>
+</div>
+
+<!-- welcome screen -->
+
+<div id="welcome">
+
+<div class="circle"></div>
+
+<h1>Welcome</h1>
+<p>My portfolio is ready</p>
+
+<button id="enterBtn">Enter</button>
+
+</div>
+
+
+<!-- navigation -->
+
+<nav id="navbar">
+<ul class="nav-list">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+
+<!-- main layout -->
+
+<div class="container">
+
+<!-- left side -->
+
+<div class="sidebar">
+
+<img src="profile.png" class="profile-img">
+
+<h2>EDCIEL D GEOLINA</h2>
+
+<p class="title">Programming Student</p>
+
+<div class="contact">
+
+<h3>Contact</h3>
+
+<ul>
+<li>Email: dayaonelvie@gmail.com</li>
+<li>Phone: 63995-098-0618</li>
+<li>Location: Caloocan, Philippines</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- right side -->
+
+<div class="main-content">
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a student interested in <span class="highlight">web development</span>.
+I enjoy learning programming and building simple websites.
+</p>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<ul class="skills-list">
+<li>HTML</li>
+<li>CSS</li>
+<li>JAVASCRIPT</li>
+<li>Writing</li>
+<li>Experimenting</li>
+</ul>
+
+</section>
+
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="job">
+
+<h3>Computer Programming Lab</h3>
+
+<p class="date">2017 - Present</p>
+
+<ul>
+<li>Created simple web pages</li>
+<li>Code on school programming subjects</li>
+<li>Helped classmates with coding</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Languages</h2>
+
+<ul>
+<li>Filipino</li>
+<li>English</li>
+</ul>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<p>You can contact me through email or phone.</p>
+
+</section>
+
+</div>
+
+</div>
+
+
+<script>
+
+/* loader */
+
+window.onload = function(){
+
+setTimeout(function(){
+
+document.getElementById("loader").style.display = "none";
+document.getElementById("welcome").style.display = "flex";
+
+},2000);
+
+}
+
+/* enter button */
+
+document.getElementById("enterBtn").onclick = function(){
+
+document.getElementById("welcome").style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>
